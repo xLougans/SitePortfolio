@@ -1,0 +1,499 @@
+@import "font-awesome.min.css";
+
+/* ========= Index ========= */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial';
+    list-style: none;
+    color: #22313F;
+}
+body{
+}
+.main{
+    width: 100%;
+    text-align: center;
+    background-image: url("../../Imagens/fundo.jpg");    
+    background-repeat: no-repeat;
+    height: 653px;;
+}
+.main div{
+    width: 100%;
+    display: inline-block;
+    height: 600px;
+}
+.icon{
+    font-family: FontAwesome;
+    font-size: 100px;
+    margin-top: 200px;
+    color: #5CC6D0;
+}
+#titulo{
+    font-size: 100px;
+    padding-left: 20px;
+    color: #5CC6D0;
+}
+.main p{
+    font-size: 18px;
+    color: #5CC6D0;
+}
+.btn1{
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    top: 100px;
+    position: relative;
+    border: 1px solid;
+    border-radius: 10px;
+    font-size: 20px;
+    border-color: #5CC6D0;
+}
+.btn1 a{
+    text-decoration: none;
+    color: #5CC6D0;
+}
+.btn1:hover{
+    background-color: rgba(255,255,255,.3);
+    cursor: pointer;
+    transition: all .5s;
+}
+/* ========= SECTION GALERIA ========= */
+
+
+#titulo2{
+    font-size: 30px;
+    padding-left: 20px;
+    color: #5CC6D0;
+    text-align: center;
+    margin-top: 20px;
+}
+#caixa{
+    margin-top: 30px;
+}
+
+#caixa li{
+    display: inline-block;
+}
+.lbox{
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+}
+.lbox:target{
+    opacity: 1;
+    visibility: visible;
+    background-color: rgba(10,10,10,.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.box_img{
+    text-align: center;
+    margin: 35px auto;
+}
+.botao{
+    color: white;
+    font-family: 'Arial';
+    text-decoration: none;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+    text-align: center;
+}
+
+#prev{
+    left: 12%;
+    top: 45%;
+}
+#next{
+    right: 12%;
+    top: 45%;
+}
+#close{
+    right: 12%;
+    top: 3%;
+}
+
+
+/* ========= SECTION Sobre e Contato [EM CASO DE MERDA, EXCLUA ISSO RAPIDAMENTE.]========= */
+
+
+/* ========= CAIXA MODAL [ÚTIL] ========= */
+
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* ========= .MOZ ÚTEIS PARA RESPONSIVIDADE [ÚTIL] ========= */
+
+    @-ms-viewport {
+        width: device-width;
+    }
+body {
+    -ms-overflow-style: scrollbar;
+}
+    @media screen and (max-width: 480px) {
+        html, body {
+            min-width: 320px;
+	}
+    }
+body.is-loading *, body.is-loading *:before, body.is-loading *:after {
+    -moz-animation: none !important;
+    -webkit-animation: none !important;
+    -ms-animation: none !important;
+    animation: none !important;
+    -moz-transition: none !important;
+    -webkit-transition: none !important;
+    -ms-transition: none !important;
+    transition: none !important;
+}
+
+/* ========= ELEMENTOS @MEDIA DE FORMULÁRIO ========= */
+
+    @media screen and (max-width: 1680px) {
+        body, input, select, textarea {
+            font-size: 11pt;
+	}
+    }
+
+    @media screen and (max-width: 1280px) {
+        body, input, select, textarea {
+            font-size: 11pt;
+        }
+    }
+
+    @media screen and (max-width: 980px) {
+	body, input, select, textarea {
+            font-size: 11pt;
+	}
+    }
+
+    @media screen and (max-width: 736px) {
+        body, input, select, textarea {
+            font-size: 12pt;
+	}
+    }
+
+    @media screen and (max-width: 480px) {
+        body, input, select, textarea {
+            font-size: 12pt;
+	}
+    }
+    @media screen and (max-width: 480px) {
+	h1 {
+            font-size: 1.5em;
+	}
+}
+    @media screen and (max-width: 480px) {
+	h2 {
+            font-size: 1.4em;
+	}
+    }
+
+	h3 {
+		font-size: 1.80em;
+                margin-bottom: 20px;
+	}
+
+/* ========= SEÇÃO DE BOTÃO ========= */
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button,
+.button {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    background: #5CC6D0;
+    color: #FFF;
+    border-radius: 4px;
+    border: 0;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 700;
+    height: 2.85em;
+    line-height: 2.95em;
+    padding: 0 1.5em;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+button:hover,
+.button:hover {
+    color: #FFF;
+    background: #5cb0b6;
+}
+
+    @media screen and (max-width: 480px) {
+        input[type="submit"],
+        input[type="reset"],
+        input[type="button"],
+        button,
+        .button {
+            padding: 0;
+        }
+    }
+
+/* ========= SEÇÃO DE CONTATO ========= */
+
+#contato{
+    display: -ms-flexbox;
+    -ms-flex-pack: justify;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -moz-justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -ms-justify-content: space-between;
+    justify-content: space-between;
+    background: #ececec;
+}
+#contato .coluna.social {
+    background: #e6e6e6;
+}
+
+#contato p{
+    margin: 0 0 2em 0;
+    text-align: justify;
+}
+#icon{
+    display: flex;
+
+    padding: 0;
+    margin: 0;
+}
+#icon li{
+    padding-right: 10px;
+}
+
+#contato .coluna {
+    padding: 3.5em 0 1.5em 0;
+    padding-left: 3.5em;
+    padding-right: 3.5em;
+    width: 50%;
+}
+
+    @media screen and (max-width: 980px) {
+        #contato .coluna {
+            padding: 2em 0 0.1em 0;
+            padding-left: 2em;
+            padding-right: 2em;
+        }
+    }
+
+    @media screen and (max-width: 736px) {
+        #contato .coluna {
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        #contato .coluna {
+            padding: 1em 0 0.1em 0;
+            padding-left: 1em;
+            padding-right: 1em;
+        }
+    }
+
+/* ========= CONFIG. LISTAS ========= */
+
+ul {
+    list-style: disc;
+    margin: 0 0 2em 0;
+    padding-left: 1em;
+}
+
+ul li {
+    padding-left: 0.5em;
+}
+
+ul.actions {
+    cursor: default;
+    list-style: none;
+    padding-left: 0;
+}
+
+ul.actions li {
+    display: inline-block;
+    padding: 0 1em 0 0;
+    vertical-align: middle;
+}
+
+ul.actions li:last-child {
+    padding-right: 0;
+}
+
+    @media screen and (max-width: 480px) {
+        ul.actions {
+            margin: 0 0 2em 0;
+        }
+
+        ul.actions li {
+            padding: 1em 0 0 0;
+            display: block;
+            text-align: center;
+            width: 100%;
+        }
+
+        ul.actions li:first-child {
+            padding-top: 0;
+        }
+
+        ul.actions li > * {
+            width: 100%;
+            margin: 0 !important;
+        }
+
+        ul.actions li > *.icon:before {
+            margin-left: -2em;
+	}					
+    }
+    
+    
+/* ========= SEÇÃO DE FORMULÁRIO ========= */
+
+form .campo {
+    margin-bottom: 1.5em;
+}
+
+form .campo.meio {
+    display: inline-block;
+    width: 48%;
+}
+
+form .campo.meio.primeiro {
+    margin-right: 2.5%;
+}
+
+    @media screen and (max-width: 980px) {
+        form .campo.meio {
+            display: block;
+            width: 100%;
+        }
+
+        form .campo.meio.primeiro {
+            margin-right: 0;
+        }
+    }
+
+label {
+    display: block;
+    font-size: 1em;
+    font-weight: 700;
+    margin: 0 0 1em 0;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+select,
+textarea {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    border-radius: 4px;
+    border: solid 1px rgba(25, 181, 254, 0.25);
+    color: inherit;
+    display: block;
+    outline: 0;
+    padding: 0 1em;
+    text-decoration: none;
+    width: 100%; /* ESTE AQUI DEFINE A APARENCIA */
+}
+	
+input[type="text"],
+input[type="password"],
+input[type="email"],
+select {
+    height: 2.75em;
+}
+
+textarea {
+    padding: 0.75em 1em;
+}
+
+	::-webkit-input-placeholder {
+		opacity: 1.0;
+		color: rgba(34, 49, 63, 0.25);
+	}
+
+	:-moz-placeholder {
+		opacity: 1.0;
+		color: rgba(34, 49, 63, 0.25);
+	}
+
+	::-moz-placeholder {
+		opacity: 1.0;
+		color: rgba(34, 49, 63, 0.25);
+	}
+
+	:-ms-input-placeholder {
+		opacity: 1.0;
+		color: rgba(34, 49, 63, 0.25);
+	}
+
+	.formerize-placeholder {
+		opacity: 1.0;
+		color: rgba(34, 49, 63, 0.25);
+	}
+
+        
+/* ========= SEÇÃO RODAPÉ ========= */
+
+footer{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    background-color: #333333;
+    padding-top: 15px;
+}
+footer p{
+    color: white;
+    font-size: 16px;
+}
+
+/* ========= Elementos @media ========= */
+
+    @media (max-width: 650px){
+        .icon{
+            margin-top: 100px;
+        }
+        .icon, #titulo{
+            display: block;
+        }    
+    }
+    @media (max-width: 510px){
+         #titulo{
+            font-size: 80px;
+        }    
+    } 
+    @media (max-width: 400px){
+        #titulo{
+            font-size: 55px;
+            padding: 0;
+        }    
+    }
